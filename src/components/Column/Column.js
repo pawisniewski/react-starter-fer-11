@@ -24,8 +24,8 @@ class Column extends React.Component {
     return (
       <section className={styles.component}>
         <h3 className={styles.title}>{title}
-          <span>
-            <Icon name={icon} className={styles.icon}/>
+          <span className={styles.icon}>
+            <Icon name={icon}/>
           </span>
         </h3>
 
