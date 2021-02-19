@@ -6,6 +6,7 @@ import MainLayout from '../MainLayout/MainLayout';
 import FAQ from '../FAQ/FAQ';
 import {AnimatedSwitch} from 'react-router-transition';
 import styles from './App.scss';
+import List from '../List/ListContainer';
 
 const App = () => (
   <BrowserRouter>
@@ -16,6 +17,7 @@ const App = () => (
         atActive={{ opacity: 1 }}
         className={styles.switchWrapper}
       >
+        <Route exact path="/list/:id" component={List} />
         <Route exact path='/' component={Home} />
         <Route exact path='/info' component={Info} />
         <Route exact path='/FAQ' component={FAQ} />
